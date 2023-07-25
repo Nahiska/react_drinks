@@ -93,7 +93,8 @@ export default function SearchForm () {
                         <Row className="justify-content-end">
                             <Col md={3}>
                                 <button
-                                    className="btn btn-info text-uppercase w-100 shadow"
+                                    className="btn text-uppercase w-100 shadow"
+                                    style={{ minHeight: '60px', color: '#FFFFFF', background: "#950380", border: 'none' }}
                                     type="submit"
                                     disabled={loading}
                                 >
