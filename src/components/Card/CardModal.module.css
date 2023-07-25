@@ -23,7 +23,9 @@
 .card .counter {
     border: thin solid grey;
     border-radius: 4px;
-    padding: 4px;
+    padding: 2px;
+    margin-right: 0.5rem;
+    width: 30px;
 }
 
 .card .counter button {
@@ -50,4 +52,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100px;
+}
+
+@media (min-width: 420px) {
+    .card .counter {
+        width: 80px;
+    }
 }

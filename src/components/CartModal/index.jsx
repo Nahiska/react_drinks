@@ -13,7 +13,7 @@ export default function CartModal() {
         <div className={styles.modalBg}>
             <div className={styles.modal}>
                 <FontAwesomeIcon icon={faXmarkCircle} className={styles.icon} onClick={toogleModal} />
-                <h2>Mi Carrito</h2>
+                <h2 className={styles.cart}>Mi Carrito</h2>
                 <section className={styles.modalBody}>
                     <div className={styles.modalDrinksListContainer}>
                         {cart.cartItems.length == 0 && (
@@ -27,7 +27,7 @@ export default function CartModal() {
 
                     </div>
                     <aside>
-                        <p>Total:{orderTotal}</p>
+                        <p className={styles.cart}>Total:{orderTotal}</p>
                         <div className={styles.btnContainer}>
                             <button className={styles.clearCart} onClick={clearCart}>Vaciar Carrito</button>
                             <button className={styles.confirm} onClick={sendOrder}> Confirmar Compra</button>

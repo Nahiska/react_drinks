@@ -12,7 +12,7 @@
 
 .modalBg .modal {
     background-color: white;
-    width: 500px;
+    min-width: 250px;
     border-radius: 8px;
     padding:1rem;
 }
@@ -84,7 +84,9 @@
 
 .btnContainer button.clearCart {
     background-color: lightgray;
+    color: rgb(117, 117, 117);
     margin: 0.5rem;
+    min-width: 80px;
 }
 
 .btnContainer button.confirm {
@@ -97,4 +99,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(158, 31, 126);
+    font-weight: 600;
 }
